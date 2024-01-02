@@ -1,0 +1,490 @@
+** ComfyUI start up time: 2023-12-30 16:25:38.456717
+
+#######################################################################
+[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
+
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', '-m', 'pip', 'install', 'timm==0.4.12']
+
+## Execute install/(de)activation script for 'C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node'
+ Collecting timm==0.4.12
+   Downloading timm-0.4.12-py3-none-any.whl (376 kB)
+      -------------------------------------- 377.0/377.0 kB 3.3 MB/s eta 0:00:00
+ Requirement already satisfied: torch>=1.4 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from timm==0.4.12) (2.3.0.dev20231230+cu121)
+ Requirement already satisfied: torchvision in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from timm==0.4.12) (0.18.0.dev20231230+cu121)
+ Requirement already satisfied: filelock in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (3.13.1)
+ Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (4.9.0)
+ Requirement already satisfied: sympy in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (1.12)
+ Requirement already satisfied: networkx in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (3.1)
+ Requirement already satisfied: jinja2 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (3.1.2)
+ Requirement already satisfied: fsspec in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.4->timm==0.4.12) (2023.12.2)
+ Requirement already satisfied: numpy in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torchvision->timm==0.4.12) (1.24.3)
+ Requirement already satisfied: requests in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torchvision->timm==0.4.12) (2.30.0)
+ Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torchvision->timm==0.4.12) (10.1.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from jinja2->torch>=1.4->timm==0.4.12) (2.1.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->torchvision->timm==0.4.12) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->torchvision->timm==0.4.12) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->torchvision->timm==0.4.12) (2.0.2)
+ Requirement already satisfied: certifi>=2017.4.17 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->torchvision->timm==0.4.12) (2023.5.7)
+ Requirement already satisfied: mpmath>=0.19 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from sympy->torch>=1.4->timm==0.4.12) (1.3.0)
+ Installing collected packages: timm
+ Successfully installed timm-0.4.12
+[!] 
+[!] [notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[!] [notice] To update, run: python.exe -m pip install --upgrade pip
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', '-m', 'pip', 'install', 'transformers==4.15.0']
+
+## Execute install/(de)activation script for 'C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node'
+ Collecting transformers==4.15.0
+   Downloading transformers-4.15.0-py3-none-any.whl (3.4 MB)
+      ---------------------------------------- 3.4/3.4 MB 11.3 MB/s eta 0:00:00
+ Requirement already satisfied: filelock in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (3.13.1)
+ Requirement already satisfied: huggingface-hub<1.0,>=0.1.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (0.20.1)
+ Requirement already satisfied: numpy>=1.17 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (1.24.3)
+ Requirement already satisfied: packaging>=20.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (23.2)
+ Requirement already satisfied: pyyaml>=5.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (6.0.1)
+ Requirement already satisfied: regex!=2019.12.17 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (2023.10.3)
+ Requirement already satisfied: requests in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (2.30.0)
+ Collecting sacremoses (from transformers==4.15.0)
+   Obtaining dependency information for sacremoses from https://files.pythonhosted.org/packages/0b/f0/89ee2bc9da434bd78464f288fdb346bc2932f2ee80a90b2a4bbbac262c74/sacremoses-0.1.1-py3-none-any.whl.metadata
+   Downloading sacremoses-0.1.1-py3-none-any.whl.metadata (8.3 kB)
+ Collecting tokenizers<0.11,>=0.10.1 (from transformers==4.15.0)
+   Downloading tokenizers-0.10.3.tar.gz (212 kB)
+      ---------------------------------------- 212.7/212.7 kB ? eta 0:00:00
+   Installing build dependencies: started
+   Installing build dependencies: finished with status 'done'
+   Getting requirements to build wheel: started
+   Getting requirements to build wheel: finished with status 'done'
+   Preparing metadata (pyproject.toml): started
+   Preparing metadata (pyproject.toml): finished with status 'done'
+ Requirement already satisfied: tqdm>=4.27 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from transformers==4.15.0) (4.65.0)
+ Requirement already satisfied: fsspec>=2023.5.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from huggingface-hub<1.0,>=0.1.0->transformers==4.15.0) (2023.12.2)
+ Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from huggingface-hub<1.0,>=0.1.0->transformers==4.15.0) (4.9.0)
+ Requirement already satisfied: colorama in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from tqdm>=4.27->transformers==4.15.0) (0.4.6)
+ Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->transformers==4.15.0) (3.1.0)
+ Requirement already satisfied: idna<4,>=2.5 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->transformers==4.15.0) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->transformers==4.15.0) (2.0.2)
+ Requirement already satisfied: certifi>=2017.4.17 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from requests->transformers==4.15.0) (2023.5.7)
+ Collecting click (from sacremoses->transformers==4.15.0)
+   Obtaining dependency information for click from https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl.metadata
+   Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+ Collecting joblib (from sacremoses->transformers==4.15.0)
+   Obtaining dependency information for joblib from https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl.metadata
+   Using cached joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+ Downloading sacremoses-0.1.1-py3-none-any.whl (897 kB)
+    --------------------------------------- 897.5/897.5 kB 55.5 MB/s eta 0:00:00
+ Using cached click-8.1.7-py3-none-any.whl (97 kB)
+ Using cached joblib-1.3.2-py3-none-any.whl (302 kB)
+ Building wheels for collected packages: tokenizers
+   Building wheel for tokenizers (pyproject.toml): started
+   Building wheel for tokenizers (pyproject.toml): finished with status 'error'
+[!]   error: subprocess-exited-with-error
+[!]   
+[!]   Building wheel for tokenizers (pyproject.toml) did not run successfully.
+[!]   exit code: 1
+[!]   
+[!]   [51 lines of output]
+[!]   running bdist_wheel
+[!]   running build
+[!]   running build_py
+[!]   creating build
+[!]   creating build\lib.win-amd64-cpython-311
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers
+[!]   copying py_src\tokenizers\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\models
+[!]   copying py_src\tokenizers\models\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\models
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\decoders
+[!]   copying py_src\tokenizers\decoders\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\decoders
+[!]  Failed to build tokenizers
+  creating build\lib.win-amd64-cpython-311\tokenizers\normalizers
+[!]   copying py_src\tokenizers\normalizers\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\normalizers
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\pre_tokenizers
+[!]   copying py_src\tokenizers\pre_tokenizers\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\pre_tokenizers
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\processors
+[!]   copying py_src\tokenizers\processors\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\processors
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\trainers
+[!]   copying py_src\tokenizers\trainers\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\trainers
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\base_tokenizer.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\bert_wordpiece.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\byte_level_bpe.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\char_level_bpe.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\sentencepiece_bpe.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\sentencepiece_unigram.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   copying py_src\tokenizers\implementations\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\implementations
+[!]   creating build\lib.win-amd64-cpython-311\tokenizers\tools
+[!]   copying py_src\tokenizers\tools\visualizer.py -> build\lib.win-amd64-cpython-311\tokenizers\tools
+[!]   copying py_src\tokenizers\tools\__init__.py -> build\lib.win-amd64-cpython-311\tokenizers\tools
+[!]   copying py_src\tokenizers\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers
+[!]   copying py_src\tokenizers\models\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\models
+[!]   copying py_src\tokenizers\decoders\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\decoders
+[!]   copying py_src\tokenizers\normalizers\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\normalizers
+[!]   copying py_src\tokenizers\pre_tokenizers\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\pre_tokenizers
+[!]   copying py_src\tokenizers\processors\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\processors
+[!]   copying py_src\tokenizers\trainers\__init__.pyi -> build\lib.win-amd64-cpython-311\tokenizers\trainers
+[!]   copying py_src\tokenizers\tools\visualizer-styles.css -> build\lib.win-amd64-cpython-311\tokenizers\tools
+[!]   running build_ext
+[!]   running build_rust
+[!]   error: can't find Rust compiler
+[!]   
+[!]   If you are using an outdated pip version, it is possible a prebuilt wheel is available for this package but pip is not able to install from it. Installing from the wheel would avoid the need for a Rust compiler.
+[!]   
+[!]   To update pip, run:
+[!]   
+[!]       pip install --upgrade pip
+[!]   
+[!]   and then retry package installation.
+[!]   
+[!]   If you did intend to build this package from source, try installing a Rust compiler from your system package manager and ensure it is on the PATH during installation. Alternatively, rustup (available at https://rustup.rs) is the recommended way to download and update the Rust compiler toolchain.
+[!]   [end of output]
+[!]   
+[!]   note: This error originates from a subprocess, and is likely not a problem with pip.
+[!]   ERROR: Failed building wheel for tokenizers
+[!] ERROR: Could not build wheels for tokenizers, which is required to install pyproject.toml-based projects
+[!] 
+[!] [notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[!] [notice] To update, run: python.exe -m pip install --upgrade pip
+install/(de)activation script failed: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', '-m', 'pip', 'install', 'fairscale==0.4.4']
+
+## Execute install/(de)activation script for 'C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node'
+ Collecting fairscale==0.4.4
+   Downloading fairscale-0.4.4.tar.gz (235 kB)
+      -------------------------------------- 235.4/235.4 kB 2.1 MB/s eta 0:00:00
+   Installing build dependencies: started
+   Installing build dependencies: finished with status 'done'
+   Getting requirements to build wheel: started
+   Getting requirements to build wheel: finished with status 'done'
+   Installing backend dependencies: started
+   Installing backend dependencies: finished with status 'done'
+   Preparing metadata (pyproject.toml): started
+   Preparing metadata (pyproject.toml): finished with status 'done'
+ Requirement already satisfied: torch>=1.8.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from fairscale==0.4.4) (2.3.0.dev20231230+cu121)
+ Requirement already satisfied: filelock in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (3.13.1)
+ Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (4.9.0)
+ Requirement already satisfied: sympy in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (1.12)
+ Requirement already satisfied: networkx in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (3.1)
+ Requirement already satisfied: jinja2 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (3.1.2)
+ Requirement already satisfied: fsspec in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from torch>=1.8.0->fairscale==0.4.4) (2023.12.2)
+ Requirement already satisfied: MarkupSafe>=2.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from jinja2->torch>=1.8.0->fairscale==0.4.4) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from sympy->torch>=1.8.0->fairscale==0.4.4) (1.3.0)
+ Building wheels for collected packages: fairscale
+   Building wheel for fairscale (pyproject.toml): started
+   Building wheel for fairscale (pyproject.toml): finished with status 'done'
+   Created wheel for fairscale: filename=fairscale-0.4.4-py3-none-any.whl size=292847 sha256=2c189be6d467e616dffb5af8459c8c0f225e23b8b402d3af85e7a38cc93239af
+   Stored in directory: c:\users\donny\appdata\local\pip\cache\wheels\a3\18\68\b84796fef74ea879bb05cc499235ccbd3ccf097f673420cd39
+ Successfully built fairscale
+ Installing collected packages: fairscale
+   Attempting uninstall: fairscale
+     Found existing installation: fairscale 0.4.13
+     Uninstalling fairscale-0.4.13:
+       Successfully uninstalled fairscale-0.4.13
+ Successfully installed fairscale-0.4.4
+[!] 
+[!] [notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[!] [notice] To update, run: python.exe -m pip install --upgrade pip
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\python.exe', '-m', 'pip', 'install', 'pycocoevalcap']
+
+## Execute install/(de)activation script for 'C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node'
+ Collecting pycocoevalcap
+   Downloading pycocoevalcap-1.2-py3-none-any.whl (104.3 MB)
+      -------------------------------------- 104.3/104.3 MB 7.0 MB/s eta 0:00:00
+ Collecting pycocotools>=2.0.2 (from pycocoevalcap)
+   Obtaining dependency information for pycocotools>=2.0.2 from https://files.pythonhosted.org/packages/24/b2/ef28a34cf6ca50b6b2f7ad81e5837ed45c252ffef22f5a704b94141ea842/pycocotools-2.0.7-cp311-cp311-win_amd64.whl.metadata
+   Downloading pycocotools-2.0.7-cp311-cp311-win_amd64.whl.metadata (1.1 kB)
+ Requirement already satisfied: matplotlib>=2.1.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from pycocotools>=2.0.2->pycocoevalcap) (3.8.2)
+ Requirement already satisfied: numpy in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from pycocotools>=2.0.2->pycocoevalcap) (1.24.3)
+ Requirement already satisfied: contourpy>=1.0.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (4.47.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (23.2)
+ Requirement already satisfied: pillow>=8 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (10.1.0)
+ Requirement already satisfied: pyparsing>=2.3.1 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (3.1.1)
+ Requirement already satisfied: python-dateutil>=2.7 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (2.8.2)
+ Requirement already satisfied: six>=1.5 in c:\users\donny\appdata\local\programs\python\python311\lib\site-packages (from python-dateutil>=2.7->matplotlib>=2.1.0->pycocotools>=2.0.2->pycocoevalcap) (1.16.0)
+ Downloading pycocotools-2.0.7-cp311-cp311-win_amd64.whl (85 kB)
+    ---------------------------------------- 85.8/85.8 kB ? eta 0:00:00
+ Installing collected packages: pycocotools, pycocoevalcap
+ Successfully installed pycocoevalcap-1.2 pycocotools-2.0.7
+[!] 
+[!] [notice] A new release of pip is available: 23.2.1 -> 23.3.2
+[!] [notice] To update, run: python.exe -m pip install --upgrade pip
+
+[ComfyUI-Manager] Startup script completed.
+#######################################################################
+
+
+Prestartup times for custom nodes:
+  28.4 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Total VRAM 24576 MB, total RAM 28562 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\utils\generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+[92m[Allor][0m: 0 standard nodes was overridden.
+[92m[Allor][0m: 12 modules enabled.
+[92m[Allor][0m: 95 nodes was loaded.
+Traceback (most recent call last):
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\nodes.py", line 1810, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-dynamicprompts\__init__.py", line 1, in <module>
+    from .nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-dynamicprompts\nodes\__init__.py", line 1, in <module>
+    from .combinatorial import DPCombinatorialGenerator
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-dynamicprompts\nodes\combinatorial.py", line 3, in <module>
+    from dynamicprompts.enums import SamplingMethod
+ModuleNotFoundError: No module named 'dynamicprompts'
+
+Cannot import C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-dynamicprompts module for custom nodes: No module named 'dynamicprompts'
+### Loading: ComfyUI-Impact-Pack (V4.13.2)
+'Logger' object has no attribute 'encoding'
+
+!!!!!
+
+[ComfyUI-Impact-Subpack] If this error occurs, please check the following link:
+	https://github.com/ltdrdata/ComfyUI-Impact-Pack/blob/Main/troubleshooting/TROUBLESHOOTING.md
+
+!!!!!
+
+### Loading: ComfyUI-Inspire-Pack (V0.20.1)
+Package diffusers is already installed.
+C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\diffusers\utils\outputs.py:63: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  torch.utils._pytree._register_pytree_node(
+C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\utils\generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+### Loading: ComfyUI-Manager (V0.26.2)
+### ComfyUI Revision: 1866 [1b103e0c]
+Failed to auto update `Quality of Life Suit` 
+[33mQualityOfLifeSuit_Omar92_DIR:[0m C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-QualityOfLifeSuit_Omar92
+Registered sys.path: ['C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\__init__.py', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\custom_pycocotools', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\custom_oneformer', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\custom_mmpkg', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\custom_midas_repo', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\custom_detectron2', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src\\controlnet_aux', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\comfyui_controlnet_aux\\src', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\comfy', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\git\\ext\\gitdb', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\python311.zip', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\DLLs', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\Lib', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311', 'C:\\Users\\donny\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-Impact-Pack\\modules', 'C:\\Users\\donny\\Downloads\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-Impact-Pack\\impact_subpack', '../..']
+[34mDavemane42 Custom Nodes: [92mLoaded[0m
+[92m[tinyterraNodes] [32mLoaded[0m
+Downloading anime face detector...
+Failed to download lbpcascade_animeface.xml so please download it yourself.
+------------------ Luminary plugin loaded and ready! ------------------
+Total VRAM 24576 MB, total RAM 28562 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 3090 : cudaMallocAsync
+VAE dtype: torch.bfloat16
+[34mWAS Node Suite: [0mOpenCV Python FFMPEG support is enabled[0m
+[34mWAS Node Suite [93mWarning: [0m`ffmpeg_bin_path` is not set in `C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.[0m
+[34mWAS Node Suite: [0mFinished.[0m [32mLoaded[0m [0m193[0m [32mnodes successfully.[0m
+
+	[3m[93m"Believe in yourself, and the rest will fall into place."[0m[3m - Unknown[0m
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\canvas_tab
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\rembg-comfyui-node
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\sdxl_utility.py
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Model-Manager
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\sdxl-recommended-res-calc
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\luminary-plugin
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\masquerade-nodes-comfyui
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_Dave_CustomNode
+   0.0 seconds (IMPORT FAILED): C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-dynamicprompts
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-QualityOfLifeSuit_Omar92
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Custom-Scripts
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Inspire-Pack
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyMath
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy_clip_blip_node
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_UltimateSDUpscale
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\IPAdapter-ComfyUI
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\efficiency-nodes-comfyui
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\Derfuu_ComfyUI_ModdedNodes
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   0.0 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_tinyterraNodes
+   0.1 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-LCM
+   0.3 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Impact-Pack
+   0.4 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.8 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Allor
+   1.1 seconds: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[33mQualityOfLifeSuit_Omar92:[0m:NSP ready
+got prompt
+[31mWAS Node Suite [0mError: [0m`transformers==4.26.1` is required for BLIP models. Please run the `C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\requirements.txt` through ComfyUI's ptyhon executable.[0m
+WARNING:root:Pytorch pre-release version 2.3.0.dev20231230+cu121 - assuming intent to test it
+reshape position embedding from 196 to 576
+load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_capfilt_large.pth
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 154, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 84, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 77, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\WAS_Node_Suite.py", line 10739, in blip_caption_image
+    caption = model.generate(tensor, sample=False, num_beams=6, max_length=74, min_length=20)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\blip.py", line 159, in generate
+    outputs = self.text_decoder.generate(input_ids=input_ids,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\generation\utils.py", line 1797, in generate
+    return self.beam_search(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\generation\utils.py", line 3181, in beam_search
+    outputs = self(
+              ^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 886, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 781, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 445, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 361, in forward
+    cross_attention_outputs = self.crossattention(
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 277, in forward
+    self_outputs = self.self(
+                   ^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 178, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
+
+Prompt executed in 11.82 seconds
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 154, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 84, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\execution.py", line 77, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\WAS_Node_Suite.py", line 10739, in blip_caption_image
+    caption = model.generate(tensor, sample=False, num_beams=6, max_length=74, min_length=20)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\blip.py", line 159, in generate
+    outputs = self.text_decoder.generate(input_ids=input_ids,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\generation\utils.py", line 1797, in generate
+    return self.beam_search(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\transformers\generation\utils.py", line 3181, in beam_search
+    outputs = self(
+              ^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 886, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 781, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 445, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 361, in forward
+    cross_attention_outputs = self.crossattention(
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 277, in forward
+    self_outputs = self.self(
+                   ^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\donny\Downloads\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\repos\BLIP\models\med.py", line 178, in forward
+    attention_scores = torch.matmul(query_layer, key_layer.transpose(-1, -2))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (6) must match the size of tensor b (36) at non-singleton dimension 0
+
+Prompt executed in 0.22 seconds
+
+Stopped server
